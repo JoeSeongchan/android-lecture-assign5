@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/constraintLayoutEditTextAndSendButton"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/fragment_edit_text_and_send_button">
+
+  <EditText
+    android:id="@+id/editTextMessage"
+    android:layout_width="279dp"
+    android:layout_height="136dp"
+    android:layout_marginTop="40dp"
+    android:padding="7dp"
+    android:background="@drawable/send_button_and_text_view"
+    android:ems="10"
+    android:gravity="left"
+    android:hint="Name"
+    android:inputType="textMultiLine"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/buttonSend"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/send_button_and_text_view"
+    android:onClick="sendText"
+    android:text="@string/send_button"
+    android:textAllCaps="false"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
